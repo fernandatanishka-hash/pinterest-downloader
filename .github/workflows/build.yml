@@ -1344,7 +1344,7 @@ jobs:
           dGlnbm9yZVBLBQYAAAAALwAvANgPAADeFQEAAAA=
           PROJECT_ARCHIVE
           base64 --decode /tmp/pinterest-project.b64 > /tmp/pinterest-project.zip
-          unzip -q /tmp/pinterest-project.zip -d "$GITHUB_WORKSPACE"
+          unzip -oq /tmp/pinterest-project.zip -d "$GITHUB_WORKSPACE"
           test -f app/build.gradle.kts
           test -f app/src/main/AndroidManifest.xml
           test -f gradle/wrapper/gradle-wrapper.jar
